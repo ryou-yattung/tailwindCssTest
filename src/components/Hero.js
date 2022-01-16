@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="bg-white h-screen flex flex-col justify-center items-center">
-      <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14">
-        aaaaaaaa
+      <h1 className="lg:text-8xl md:text-7xl sm:text-5xl text-3xl font-black mb-14 hover:text-red-400 ease-in duration-300">
+        tailwind CSS Test
       </h1>
       <Link
         to="/"
-        className="py-6 px-14 bg-yellow-500 rounded-full text-3xl 
-        hover:bg-green-600 transition duration-300 ease-in-out flex items-center animate-bounce"
+        className="py-6 px-14 bg-blue-500 rounded-full text-3xl 
+        hover:bg-green-600 transition duration-500 ease-in-out flex items-center animate-bounce"
       >
         Hello
         <svg

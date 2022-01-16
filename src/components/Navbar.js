@@ -8,7 +8,7 @@ const NavBar = () => {
       role="navigation"
     >
       <Link to="/" className="pl-8">
-        Egg
+        Tony ryou
       </Link>
       <div className="px-4 cursor-pointer md:hidden">
         <svg
@@ -28,16 +28,16 @@ const NavBar = () => {
       </div>
       <div className="pr-8 md:block hidden">
         <Link to="/" className="p-4">
-          Home
+          aaa
         </Link>
         <Link to="/" className="p-4">
-          Menu
+          bbb
         </Link>
         <Link to="/" className="p-4">
-          About
+          ccc
         </Link>
         <Link to="/" className="p-4">
-          Contact
+          ddd
         </Link>
       </div>
     </nav>
