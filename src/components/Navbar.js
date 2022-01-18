@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
   return (
     <nav
       className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono"
@@ -10,7 +10,7 @@ const NavBar = () => {
       <Link to="/" className="pl-8">
         Tony ryou
       </Link>
-      <div className="px-4 cursor-pointer md:hidden">
+      <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -28,16 +28,13 @@ const NavBar = () => {
       </div>
       <div className="pr-8 md:block hidden">
         <Link to="/" className="p-4">
-          aaa
+          Home
         </Link>
-        <Link to="/" className="p-4">
-          bbb
+        <Link to="/menu" className="p-4">
+          Menu
         </Link>
-        <Link to="/" className="p-4">
-          ccc
-        </Link>
-        <Link to="/" className="p-4">
-          ddd
+        <Link to="/about" className="p-4">
+          About
         </Link>
       </div>
     </nav>
